@@ -1,0 +1,141 @@
+/* Common Styles */
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.border-danger {
+  border: 1px solid red;
+}
+
+.text-danger {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: black;
+}
+
+.custom-button {
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.custom-button:hover {
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 0 0 10px hsl(4, 100%, 67%);
+}
+.container-custom h1{
+  font-weight: 700;
+}
+.user-email{
+  font-weight: 700;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  body{
+    background-color: white;
+  }
+  .container-custom {
+    max-width: 600px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .content-custom {
+    padding: 20px;
+  }
+
+  .custom-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .custom-list li {
+    padding-left: 30px;
+    background: url('/src/assets/icon-list.svg') no-repeat left center;
+    background-size: 20px 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .custom-email {
+    margin-bottom: 10px;
+  }
+  .custom-button{
+    margin-top: 300px;
+  }
+  .success-image{
+    margin-bottom: 50px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 800px) {
+  .container-custom {
+    max-width: 1000px;
+    margin-top: 50px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .custom-container {
+    background-color: white;
+    max-width: 500px;
+    border-radius: 20px;
+  }
+
+  .content-custom {
+    margin-right: 60px;
+  }
+
+  .custom-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .custom-list li {
+    padding-left: 30px;
+    background: url('/src/assets/icon-list.svg') no-repeat left center;
+    background-size: 20px 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .custom-email p {
+    margin-left: 110px;
+  }
+
+  .error {
+    color: hsl(4, 100%, 67%);
+  }
+
+  .border {
+    border-color: hsl(4, 100%, 67%) !important;
+  }
+
+  .success-image {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+}
